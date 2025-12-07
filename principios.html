@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Principios — Ma & Shibui</title>
+  <meta name="description" content="Principios estéticos aplicados al diseño minimalista accesible y adaptable." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <!-- Botón de menú para móviles -->
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
+
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Logo del sitio Ma &amp; Shibui" />
+        <span>Ma &amp; Shibui</span>
+      </a>
+
+      <nav aria-label="Navegación principal" role="navigation">
+        <ul>
+          <li><a data-i18n="nav.home" href="index.html">Inicio</a></li>
+          <li><a class="active" data-i18n="nav.principles" href="principios.html">Principios</a></li>
+          <li><a data-i18n="nav.apps" href="aplicaciones.html">Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <button id="langToggle" class="lang-toggle" aria-label="Cambiar idioma" data-i18n="nav.lang">
+        ES / EN
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <section class="section" aria-labelledby="principios-top">
+      <div class="container narrow">
+        <h1 id="principios-top" data-i18n="principles.title">Principios</h1>
+        <p data-i18n="principles.intro">
+          Ma y shibui forman un lenguaje visual que equilibra propósito y calma. Ma mide el intervalo y el ritmo;
+          shibui aporta una belleza sobria que resiste el tiempo.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ma-h2">
+      <div class="container two">
+        <div>
+          <h2 id="ma-h2" data-i18n="principles.ma.h2">Ma — el intervalo significativo</h2>
+          <p data-i18n="principles.ma.body">
+            Ma es la distancia que le da sentido a lo que vemos. Organiza prioridades, crea respiración y reduce
+            fricción cognitiva. Un margen bien medido comunica respeto por el contenido.
+          </p>
+        </div>
+
+        <figure class="figure" role="group">
+          <img class="hero-visual" src="assets/Espacio.jpg"
+               alt="Ejemplo visual del valor del espacio y el respiro entre elementos." />
+          <figcaption data-i18n="alt.ma.diagram">
+            Ejemplo visual del uso del espacio para crear ritmo y claridad.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section soft" aria-labelledby="shibui-h2">
+      <div class="container two">
+        <div>
+          <h2 id="shibui-h2" data-i18n="principles.shibui.h2">Shibui — sobriedad con profundidad</h2>
+          <p data-i18n="principles.shibui.body">
+            Shibui evita lo llamativo: prefiere paletas contenidas, materiales honestos y texturas discretas.
+            Su belleza aparece en el uso diario y se revela con el tiempo.
+          </p>
+        </div>
+
+        <figure class="figure" role="group">
+          <img class="hero-visual" src="assets/Sutileza.jpg"
+               alt="Textura y materiales sobrios que muestran elegancia discreta." />
+          <figcaption data-i18n="alt.shibui.texture">
+            Textura sobria y materiales honestos con luz suave.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer">
+      <p>&copy; <span id="year"></span> Ma &amp; Shibui</p>
+      <ul class="meta" aria-label="Metadatos del sitio">
+        <li><a href="#">Accesibilidad</a></li>
+        <li><a href="#">Créditos de imágenes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/interactividad.js"></script>
+</body>
+</html>

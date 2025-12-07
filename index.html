@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio — Ma & Shibui</title>
+  <meta name="description" content="Sitio educativo minimalista con enfoque en accesibilidad y diseño adaptable." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      
+      <!-- Botón de menú móvil -->
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
+
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Logo del sitio Ma &amp; Shibui" />
+        <span>Ma & Shibui</span>
+      </a>
+
+      <nav aria-label="Navegación principal" role="navigation">
+        <ul>
+          <li><a class="active" data-i18n="nav.home" href="index.html">Inicio</a></li>
+          <li><a data-i18n="nav.principles" href="principios.html">Principios</a></li>
+          <li><a data-i18n="nav.apps" href="aplicaciones.html">Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <button id="langToggle" class="lang-toggle" aria-label="Cambiar idioma" data-i18n="nav.lang">
+        ES / EN
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="section hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        
+        <!-- Columna imagen -->
+        <figure class="figure hero-media">
+          <img class="hero-visual hero-img" src="assets/Hero.jpg"
+               alt="Composición interior minimalista con luz suave que transmite calma visual y orden." />
+        </figure>
+
+        <!-- Columna texto -->
+        <div class="hero-copy">
+          <h1 id="hero-title" class="display" data-i18n="hero.h1">Menos ruido, más intención.</h1>
+
+          <!-- Mensaje dinámico según la hora -->
+          <p class="mensaje-hora"></p>
+
+          <p class="lead" data-i18n="hero.sub">
+            Ma &amp; shibui en arquitectura, moda y diseño de interfaces.
+          </p>
+
+          <a class="btn" href="principios.html" data-i18n="cta.explore">Explorar principios</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Slider de imágenes (solo Home) -->
+    <section class="section" aria-labelledby="slider-home">
+      <div class="container">
+        <div class="slider">
+          <img class="slide" src="assets/Arquitectura.jpg" alt="Arquitectura minimalista">
+          <img class="slide" src="assets/Pausa.jpg" alt="Pausa visual como diseño">
+          <img class="slide" src="assets/Sutileza.jpg" alt="Elegancia sobria en elementos visuales">
+        </div>
+      </div>
+    </section>
+
+    <!-- Principios rápidos -->
+    <section class="section" aria-labelledby="principios-home">
+      <div class="container">
+        <h2 id="principios-home" data-i18n="home.quick.title">Principios</h2>
+
+        <div class="grid-3">
+          <article class="card" aria-labelledby="card1-title">
+            <img src="assets/Espacio.jpg"
+                 alt="Ejemplo visual del valor del espacio y el respiro entre elementos." />
+            <h3 id="card1-title" data-i18n="cards.ma.title">El valor del espacio</h3>
+            <p data-i18n="cards.ma.body">
+              El intervalo que permite que lo esencial respire.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="card2-title">
+            <img src="assets/Sutileza.jpg"
+                 alt="Textura y materiales sobrios que muestran elegancia discreta." />
+            <h3 id="card2-title" data-i18n="cards.shibui.title">Sutileza con carácter</h3>
+            <p data-i18n="cards.shibui.body">
+              Belleza sobria, texturas discretas, tiempo.
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="card3-title">
+            <img src="assets/Pausa.jpg"
+                 alt="Ritmo visual con pausas, contraste y silencio entre elementos." />
+            <h3 id="card3-title" data-i18n="cards.rhythm.title">Pausa, contraste y silencio</h3>
+            <p data-i18n="cards.rhythm.body">
+              Un ritmo visual que guía sin imponerse.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="section" aria-labelledby="cierre-home">
+      <div class="container narrow">
+        <p id="cierre-home" class="closing" data-i18n="home.closing">
+          La simplicidad no es ausencia, es elección: ma organiza silencios; shibui aporta carácter sobrio.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer">
+      <p>&copy; <span id="year"></span> Ma &amp; Shibui</p>
+      <ul class="meta" aria-label="Metadatos del sitio">
+        <li><a href="#">Accesibilidad</a></li>
+        <li><a href="#">Créditos de imágenes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/interactividad.js"></script>
+</body>
+</html>

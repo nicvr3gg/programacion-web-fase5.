@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aplicaciones — Ma & Shibui</title>
+  <meta name="description" content="Ejemplos de aplicación estética en arquitectura, moda e interfaces." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container nav">
+      <!-- Botón de menú para móviles -->
+      <button class="menu-btn" aria-label="Abrir menú">☰</button>
+
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Logo del sitio Ma &amp; Shibui" />
+        <span>Ma &amp; Shibui</span>
+      </a>
+
+      <nav aria-label="Navegación principal" role="navigation">
+        <ul>
+          <li><a data-i18n="nav.home" href="index.html">Inicio</a></li>
+          <li><a data-i18n="nav.principles" href="principios.html">Principios</a></li>
+          <li><a class="active" data-i18n="nav.apps" href="aplicaciones.html">Aplicaciones</a></li>
+        </ul>
+      </nav>
+
+      <button id="langToggle" class="lang-toggle" aria-label="Cambiar idioma" data-i18n="nav.lang">
+        ES / EN
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- Arquitectura -->
+    <section class="section" aria-labelledby="arch-h2">
+      <div class="container two-8-4">
+        <figure class="figure" role="group">
+          <img class="hero-visual" src="assets/Arquitectura.jpg"
+               alt="Arquitectura limpia con luz lateral y sombras suaves." />
+          <figcaption data-i18n="apps.arch.caption">
+            Luz lateral suave, sombras definidas y geometría limpia.
+          </figcaption>
+        </figure>
+
+        <div>
+          <h2 id="arch-h2" data-i18n="apps.arch.title">Arquitectura</h2>
+          <p data-i18n="apps.arch.body">
+            Luz natural, líneas puras y vacío útil. El vacío no es desperdicio:
+            es potencial de uso, circulación y descanso visual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moda -->
+    <section class="section soft" aria-labelledby="fashion-h2">
+      <div class="container">
+        <h2 id="fashion-h2" data-i18n="apps.fashion.title">Moda</h2>
+
+        <div class="grid-4">
+          <img class="hero-visual" src="assets/Espacio.jpg"
+               alt="Paleta neutra y uso del espacio visual." />
+          <img class="hero-visual" src="assets/Sutileza.jpg"
+               alt="Textura sobria y materiales honestos." />
+          <img class="hero-visual" src="assets/Pausa.jpg"
+               alt="Pausa visual, contraste y ritmo." />
+          <img class="hero-visual" src="assets/Hero.jpg"
+               alt="Composición limpia con luz cálida." />
+        </div>
+
+        <p class="container narrow" data-i18n="apps.fashion.body">
+          Paletas neutras, tejidos táctiles, siluetas serenas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interfaces -->
+    <section class="section" aria-labelledby="ui-h2">
+      <div class="container">
+        <h2 id="ui-h2" data-i18n="apps.ui.title">Interfaces</h2>
+
+        <div class="ui-wire"
+             role="img"
+             aria-label="Ejemplo de interfaz limpia con barra superior, tarjetas y botones accesibles">
+          <div class="bar" aria-hidden="true"></div>
+          <div class="cards" aria-hidden="true">
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+          </div>
+          <div class="buttons" aria-hidden="true">
+            <span class="b"></span>
+            <span class="b"></span>
+          </div>
+        </div>
+
+        <p class="container narrow" data-i18n="apps.ui.body">
+          Grilla de 12 columnas, espaciado 8/16/24/32, una sola familia tipográfica
+          y un color de acento funcional.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer">
+      <p>&copy; <span id="year"></span> Ma &amp; Shibui</p>
+      <ul class="meta" aria-label="Metadatos del sitio">
+        <li><a href="#">Accesibilidad</a></li>
+        <li><a href="#">Créditos de imágenes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/interactividad.js"></script>
+</body>
+</html>
